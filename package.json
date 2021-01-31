@@ -10,6 +10,10 @@
     "testwatch": "mocha --watch",
     "start": "npm run lintfix && node server"
   },
+  "engines": {
+    "node": "14.x",
+    "npm": "6.x"
+  },
   "repository": {
     "type": "git",
     "url": "git+https://github.com/sbrnag/device-managemnet-server.git"
