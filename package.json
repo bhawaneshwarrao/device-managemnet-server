@@ -8,7 +8,7 @@
     "lintfix": "eslint ./ --fix",
     "test": "mocha",
     "testwatch": "mocha --watch",
-    "start": "node server"
+    "start": "npm run lintfix && node server"
   },
   "repository": {
     "type": "git",

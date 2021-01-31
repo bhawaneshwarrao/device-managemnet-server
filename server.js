@@ -1,7 +1,9 @@
 const express = require('express');
+
 const app = express();
 const swaggerUi = require('swagger-ui-express');
 const YAML = require('yamljs');
+
 const swaggerDocument = YAML.load('./swagger.yaml');
 const mongoose = require('mongoose');
 const cors = require('cors');
@@ -35,7 +37,9 @@ mongoose
     useUnifiedTopology: true,
     useCreateIndex: true,
   })
-  .then(() => app.listen(port))
+  .then(() => app.listen(port, () => {
+    logger.info(`server started at post: ${port}`);
+  }))
   .catch((err) => logger.error(err));
 
 module.exports = app;
