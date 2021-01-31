@@ -1,0 +1,91 @@
+swagger: "2.0"
+info:
+  description: "Device Serive"
+  version: "1.0.0"
+  title: "Device Serive"
+  contact:
+    email: "nagendra.sbr@gmail.com"
+  license:
+    name: "MIT"
+host: "device.com"
+basePath: "/api/v1"
+tags:
+- name: "devices"
+  description: "devices api"
+schemes:
+- "https"
+- "http"
+paths:
+  /devices:
+    post:
+      summary: "Create device"
+      description: "This is to create device."
+      produces:
+      - "text/plain"
+      parameters:
+      - in: "body"
+        name: "body"
+        description: "Created device object"
+        required: true
+        schema:
+          $ref: "#/definitions/Device"
+      responses:
+        default:
+          description: "successful operation"
+    get:
+      summary: "Gets all devices"
+      description: "Gets all devices"
+      produces:
+        - "application/json"
+      responses:
+        default:
+          description: "successful operation"
+  /devices/{id}:
+    patch:
+      summary: "Updates device"
+      description: "Updates device"
+      produces:
+      - "text/plain"
+      parameters:
+      - in: "path"
+        name: "id"
+        type: "string"
+        description: "device id to get device"
+        required: true    
+      - in: "body"
+        name: "body"
+        description: "update device body"
+        required: true
+        schema:
+          type: "object"
+          properties:
+            checkedOutBy:
+              type: "string"
+            checkOut:
+              type: "boolean"
+            checkIn:
+              type: "boolean"
+      responses:
+        default:
+          description: "successful operation"
+    delete:
+      summary: "Delete device by device id"
+      description: "Delete device by device id"
+      parameters:
+      - in: "path"
+        required: true
+        name: "id"
+        type: "string"
+      responses:
+        "200":
+          description: "successful operation"
+definitions:
+  Device:
+    type: "object"
+    properties:
+      device:
+        type: "string"
+      os:
+        type: "string"
+      manufacturer:
+        type: "string"

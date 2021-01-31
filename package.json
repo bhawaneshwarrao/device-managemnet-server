@@ -1,0 +1,43 @@
+{
+  "name": "device",
+  "version": "1.0.0",
+  "description": "device api",
+  "main": "server.js",
+  "scripts": {
+    "lint": "eslint ./",
+    "lintfix": "eslint ./ --fix",
+    "test": "mocha",
+    "testwatch": "mocha --watch",
+    "start": "node server"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/sbrnag/practive-server.git"
+  },
+  "author": "nagendra.sbr@gmail.com",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/sbrnag/practive-server/issues"
+  },
+  "homepage": "https://github.com/sbrnag/practive-server#readme",
+  "dependencies": {
+    "cors": "^2.8.5",
+    "express": "^4.17.1",
+    "joi": "^17.3.0",
+    "mongoose": "^5.11.14",
+    "morgan": "^1.10.0",
+    "swagger-ui-express": "^4.1.6",
+    "uuid": "^8.3.2",
+    "winston": "^3.3.3",
+    "yamljs": "^0.3.0"
+  },
+  "devDependencies": {
+    "mocha": "^8.2.1",
+    "chai": "^4.2.0",
+    "chai-http": "^4.3.0",
+    "eslint": "^7.18.0",
+    "eslint-config-airbnb": "^18.2.1",
+    "eslint-plugin-import": "^2.22.1",
+    "nodemon": "^2.0.7"
+  }
+}
