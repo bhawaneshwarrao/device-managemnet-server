@@ -12,8 +12,7 @@ const appLogger = require('./middlewares/app-logger');
 const { logger } = require('./utils');
 
 const port = process.env.PORT || 3000;
-const dbURI = process.env.CONNECTION_URL
-  || 'mongodb+srv://nagsbr:NagSbrTest2@cluster0.eow8e.mongodb.net/device-database?retryWrites=true&w=majority';
+const dbURI = process.env.CONNECTION_URL;
 
 // middleware
 app.use(express.json());
