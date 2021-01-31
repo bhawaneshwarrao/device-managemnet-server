@@ -12,14 +12,14 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/sbrnag/practive-server.git"
+    "url": "git+https://github.com/sbrnag/device-managemnet-server.git"
   },
   "author": "nagendra.sbr@gmail.com",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/sbrnag/practive-server/issues"
+    "url": "https://github.com/sbrnag/device-managemnet-server/issues"
   },
-  "homepage": "https://github.com/sbrnag/practive-server#readme",
+  "homepage": "https://github.com/sbrnag/device-managemnet-server/",
   "dependencies": {
     "cors": "^2.8.5",
     "express": "^4.17.1",
