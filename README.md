@@ -1,7 +1,7 @@
 # device-managemnet-server
 code test node app
 
-Node version - 14.15.4 (for full list of npms used refere package.json)
+Node version - 14.15.4 (for full list of libraries and versions please refer package.json)
 Deployed to heroku (https://jnj-device-api.herokuapp.com/)
 Database used mogodb, used mongodb atlas
 
