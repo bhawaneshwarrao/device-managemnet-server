@@ -26,3 +26,4 @@ GET : https://jnj-device-api.herokuapp.com/api/v1/devices
 PATCH : https://jnj-device-api.herokuapp.com/api/v1/devices/{id}
 
 DELETE : https://jnj-device-api.herokuapp.com/api/v1/devices/{id}
+testing
